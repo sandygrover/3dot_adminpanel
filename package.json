@@ -8,7 +8,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
+    "url": "git@github.com:sandygrover/3dot_adminpanel.git"
   },
   "dependencies": {
     "@coreui/chartjs": "^2.0.0",

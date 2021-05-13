@@ -5,7 +5,7 @@ import {
   CCol,
   CRow,
 } from '@coreui/react'
-import ReactDOM from 'react-dom'
+//import ReactDOM from 'react-dom'
 
 const Calculator = () => {
   const myelement = (
@@ -16,7 +16,7 @@ const Calculator = () => {
       </script>
     </div>
   );
-  ReactDOM.render(myelement, document.getElementById('calculator_widget'));
+  //ReactDOM.render(myelement, document.getElementById('calculator_widget'));
   return (
     <CRow>
       <CCol xl={10}>
@@ -25,7 +25,7 @@ const Calculator = () => {
             <h4>Calculator</h4>
           </CCardHeader>
           <CCardBody>
-            <div id="calculator_widget"></div>
+            <div id="calculator_widget">{myelement}</div>
           </CCardBody>
         </CCard>
       </CCol>
