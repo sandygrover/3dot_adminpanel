@@ -20,7 +20,7 @@ const Calculator = () => {
   return (
     <CRow>
       <CCol xl={10}>
-        <CCard>
+        <CCard className="chgdiv">
           <CCardHeader>
             <h4>Calculator</h4>
           </CCardHeader>

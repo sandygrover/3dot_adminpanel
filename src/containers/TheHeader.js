@@ -18,6 +18,7 @@ import routes from '../routes'
 // import { 
 //   TheHeaderDropdown,
 // }  from './index'
+import Toggle from './Toggle'
 
 const TheHeader = () => {
   const dispatch = useDispatch()
@@ -60,6 +61,17 @@ const TheHeader = () => {
           <CHeaderNavLink>Settings</CHeaderNavLink>
         </CHeaderNavItem> */}
       </CHeaderNav>
+      
+      <CHeaderNav className="px-3">
+        <Toggle/>
+      </CHeaderNav>
+
+      {/* <CHeaderNav className="px-3">
+        <TheHeaderDropdownNotif/>
+        <TheHeaderDropdownTasks/>
+        <TheHeaderDropdownMssg/>
+        <TheHeaderDropdown/>
+      </CHeaderNav> */}
 
       <CSubheader className="px-3 justify-content-between">
         <CBreadcrumbRouter 

@@ -12,7 +12,7 @@ const UserProfile = () => {
   return (
     <CRow>
       <CCol xl={10}>
-        <CCard>
+        <CCard className="chgdiv">
           <CCardHeader>
             <h4>Profile <span className="btn btn-primary" onClick={() => setShow(true)} style={{float:'right'}}>Edit</span></h4>
             <Modal title="Edit profile" onClose={() => setShow(false)} show={show}>

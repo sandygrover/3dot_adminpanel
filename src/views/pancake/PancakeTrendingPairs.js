@@ -15,29 +15,35 @@ const PancakeTrendingPairs = () => {
             <small className="text-muted"> </small>
         </CCardHeader>
         <br/>
-        <CCard>
+        <CCard className="chgdiv">
           <CCardBody>
-            <table class="table table-striped d-none">
+            <table className="table table-striped">
                 <thead>
-                    <th>Date</th>
-                    <th>Type</th>
-                    <th>Price (USD)</th>
-                    <th>Total Cake</th>
-                    <th>Total BNB</th>
-                    <th>Total USD</th>
-                    <th>Maker</th>
-                    <th>Links</th>
+                  <tr>
+                    <th style={{width: '100px'}}>Ranking</th>
+                    <th>Name</th>
+                  </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>21-05-11 12:10:03</td>
-                        <td>Sell</td>
-                        <td>$35.65482279</td>
-                        <td>0.6744</td>
-                        <td>0.04</td>
-                        <td>24.05</td>
-                        <td>0xd041009304bac2f18c50c6471425fa9a90e80b59</td>
-                        <td>Tx</td>
+                        <td>1</td>
+                        <td>Cake</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>FEG</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>wGOLD</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>EarnX</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>TACO</td>
                     </tr>
                 </tbody>
             </table>

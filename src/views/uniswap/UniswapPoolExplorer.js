@@ -11,14 +11,15 @@ const UniswapPoolExplorer = () => {
   return (
     <CRow>
       <CCol xl={12}>
-        <CCard>
+        <CCard className="chgdiv">
           <CCardHeader>
             <h4>Pool Explorer</h4>
             <small className="text-muted"> </small>
           </CCardHeader>
           <CCardBody>
-            <table class="table table-striped">
+            <table className="table table-striped">
                 <thead>
+                  <tr>
                     <th>Token</th>
                     <th>Time</th>
                     <th>Action</th>
@@ -27,6 +28,7 @@ const UniswapPoolExplorer = () => {
                     <th>Total Value</th>
                     <th>Token Amount</th>
                     <th>ETH Amount</th>
+                  </tr>                    
                 </thead>
                 <tbody>
                     <tr>

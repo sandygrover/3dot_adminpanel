@@ -16,15 +16,16 @@ const UniswapPairExplorer = () => {
             <small className="text-muted"> </small>
         </CCardHeader>
         <br/>
-        <CCard>
+        <CCard className="chgdiv">
           <CCardBody>
             <MainChartExample style={{height: '300px', marginTop: '40px'}}/>
           </CCardBody>
         </CCard>
-        <CCard>
+        <CCard className="chgdiv2">
           <CCardBody>
-            <table class="table table-striped">
+            <table className="table table-striped">
                 <thead>
+                  <tr>
                     <th>Token</th>
                     <th>Time</th>
                     <th>Action</th>
@@ -33,6 +34,7 @@ const UniswapPairExplorer = () => {
                     <th>Total Value</th>
                     <th>Token Amount</th>
                     <th>ETH Amount</th>
+                  </tr>
                 </thead>
                 <tbody>
                     <tr>

@@ -11,14 +11,15 @@ const BigSwapExplorer = () => {
   return (
     <CRow>
       <CCol xl={12}>
-        <CCard>
+        <CCard className="chgdiv">
           <CCardHeader>
             <h4>Big Swap Explorer</h4>
             <small className="text-muted"> </small>
           </CCardHeader>
           <CCardBody>
-            <table class="table table-striped">
+            <table className="table table-striped">
                 <thead>
+                  <tr>
                     <th>Pair</th>
                     <th>Time</th>
                     <th>Type</th>
@@ -26,6 +27,7 @@ const BigSwapExplorer = () => {
                     <th>Total ETH</th>
                     <th>Total USD</th>
                     <th>Change</th>
+                  </tr>
                 </thead>
                 <tbody>
                     <tr>

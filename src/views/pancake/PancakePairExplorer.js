@@ -16,23 +16,25 @@ const PancakePairExplorer = () => {
             <small className="text-muted"> </small>
         </CCardHeader>
         <br/>
-        <CCard>
+        <CCard className="chgdiv">
           <CCardBody>
             <MainChartExample style={{height: '300px', marginTop: '40px'}}/>
           </CCardBody>
         </CCard>
-        <CCard>
+        <CCard className="chgdiv2">
           <CCardBody>
-            <table class="table table-striped">
+            <table className="table table-striped">
                 <thead>
-                    <th>Date</th>
-                    <th>Type</th>
-                    <th>Price (USD)</th>
-                    <th>Total Cake</th>
-                    <th>Total BNB</th>
-                    <th>Total USD</th>
-                    <th>Maker</th>
-                    <th>Links</th>
+                    <tr>
+                      <th>Date</th>
+                      <th>Type</th>
+                      <th>Price (USD)</th>
+                      <th>Total Cake</th>
+                      <th>Total BNB</th>
+                      <th>Total USD</th>
+                      <th>Maker</th>
+                      <th>Links</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
