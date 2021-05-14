@@ -1,17 +1,29 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
-
+var current=1
+localStorage.getItem('current',current)
+function chg(){
+  if(localStorage.getItem('current')==1){
+    localStorage.setItem('current',0)
+  }
+  else{
+    localStorage.setItem('current',1)
+  }
+  window.location.reload()
+}
 const _nav =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Dashboard',
     to: '/dashboard',
+    onClick : chg,
     icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Uniswap',
-    icon: 'cil-star',
+    //icon: 'cil-star',
+    icon: <img alt="uniswap" className="c-sidebar-brand-full sidebar_icon" height="20" src={'icons/uniswap.svg'}/>,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -33,7 +45,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Pancake',
-    icon: 'cil-star',
+    icon: <img alt="uniswap" className="c-sidebar-brand-full sidebar_icon" height="20" src={'icons/pancake.svg'}/>,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -50,7 +62,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: 'User Profile',
-    icon: 'cil-chart-pie',
+    icon: 'cil-user',
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -73,8 +85,10 @@ const _nav =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Switch to BSC',
+    className:'switch',
     to: '/',
-    icon: 'cil-puzzle'
+    //icon: 'cil-puzzle'
+    icon: <img alt="switch" className="c-sidebar-brand-full sidebar_icon switchimg" onClick={chg} height="20" src={localStorage.getItem('current')==1 ? 'icons/ethereum.svg'  : 'icons/bsc.svg'}/>
   },
   /*
   {

@@ -125,3 +125,11 @@ body.dark {
 .c-subheader {
   display: none;
 }
+.sidebar_icon {
+  margin-right: 19px;
+  margin-left: 3px;
+}
+.switch img {
+  border-radius: 100%;
+  background: white;
+}

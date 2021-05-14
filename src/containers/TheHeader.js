@@ -33,6 +33,7 @@ const TheHeader = () => {
     const val = [false, 'responsive'].includes(sidebarShow) ? true : 'responsive'
     dispatch({type: 'set', sidebarShow: val})
   }
+  //document.querySelector(".sidebar_icon").style.cssText="margin-right: 19px;margin-left: 3px;";
 
   return (
     <CHeader withSubheader>
