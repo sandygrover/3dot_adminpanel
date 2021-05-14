@@ -23,7 +23,7 @@ const PancakePairExplorer = () => {
         </CCard>
         <CCard className="chgdiv2">
           <CCardBody>
-            <table className="table table-striped">
+            <table className="table table-striped table-responsive">
                 <thead>
                     <tr>
                       <th>Date</th>

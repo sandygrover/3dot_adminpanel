@@ -17,7 +17,7 @@ const UniswapPoolExplorer = () => {
             <small className="text-muted"> </small>
           </CCardHeader>
           <CCardBody>
-            <table className="table table-striped">
+            <table className="table table-striped table-responsive">
                 <thead>
                   <tr>
                     <th>Token</th>

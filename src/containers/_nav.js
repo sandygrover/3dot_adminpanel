@@ -15,8 +15,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Dashboard',
-    to: '/dashboard',
-    onClick : chg,
+    to: '/',
     icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
   },
   {
@@ -86,9 +85,10 @@ const _nav =  [
     _tag: 'CSidebarNavItem',
     name: 'Switch to BSC',
     className:'switch',
+    onClick : chg,
     to: '/',
     //icon: 'cil-puzzle'
-    icon: <img alt="switch" className="c-sidebar-brand-full sidebar_icon switchimg" onClick={chg} height="20" src={localStorage.getItem('current')==1 ? 'icons/ethereum.svg'  : 'icons/bsc.svg'}/>
+    icon: <img alt="switch" className="c-sidebar-brand-full sidebar_icon switchimg" onClick={chg} height="20" src={localStorage.getItem('current')==1 ? 'icons/ethereum.svg'  : 'icons/bsc.svg'} style={{ background: localStorage.getItem('current')==1? 'white': 'transparent'}}/>
   },
   /*
   {

@@ -17,7 +17,7 @@ const User = ({match}) => {
             User id: {match.params.id}
           </CCardHeader>
           <CCardBody>
-              <table className="table table-striped table-hover">
+              <table className="table table-striped table-hover table-responsive">
                 <tbody>
                   {
                     userDetails.map(([key, value], index) => {
