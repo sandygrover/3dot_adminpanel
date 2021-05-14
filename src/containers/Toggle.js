@@ -65,6 +65,7 @@ const Toggle = () => {
       document.querySelector(".c-header").style.background="#fff";
       document.querySelector(".c-footer").style.background="#ebedef";
       document.querySelector(".c-header-nav-link").style.color="#00001580";
+      document.querySelector(".anch").style.color="#00001580";
     } else {
       body.classList.replace(lightTheme, darkTheme);
       e.target.classList.add(clickedClass);
@@ -80,6 +81,7 @@ const Toggle = () => {
       document.querySelector(".c-header").style.background="#1d3548";
       document.querySelector(".c-footer").style.cssText="background:#1d3548;color:white;";
       document.querySelector(".c-header-nav-link").style.color="#ffffff";
+      document.querySelector(".anch").style.color="#ffffff";
     }
   };
 
